@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $ff-brand;
+}
+
+html {
+  font-size: 1vw;
+  font-weight: $fw-normal;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+    font-size: $fs-global;
+  }
+}
