@@ -149,9 +149,9 @@
   }
 }
 
-.NewJob {
+.Job {
   padding: 0.69em 0.69em 0.42em;
-  background: $desaturated-dark-cyan;
+
   color: white;
   border-radius: 100vw;
   margin-left: 1.11em;
@@ -163,6 +163,9 @@
   @media screen and (max-width: 789px) {
     font-size: 0.56em;
   }
+}
+.NewJob {
+  background: $desaturated-dark-cyan;
 }
 
 .FeaturedJob {

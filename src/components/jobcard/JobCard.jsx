@@ -37,12 +37,15 @@ export const JobCard = ({ job }) => {
 
         <div className="CompanyInfoWrapper">
           {job.new && (
-            <span className="NewJob" onClick={() => addFilter('New')}>
+            <span className="NewJob Job" onClick={() => addFilter('New')}>
               New!
             </span>
           )}
           {job.featured && (
-            <span className="FeaturedJob" onClick={() => addFilter('Featured')}>
+            <span
+              className="FeaturedJob Job"
+              onClick={() => addFilter('Featured')}
+            >
               Featured
             </span>
           )}

@@ -17,9 +17,12 @@ export const FilterPill = ({ filter }) => {
     <div className="FilterPillWrapper">
       <span className="Pill">{filter.text}</span>
 
-      <button className="RemoveButton" onClick={() => removeFilter(filter)}>
+      <RemoveButton
+        className="RemoveButton"
+        onClick={() => removeFilter(filter)}
+      >
         <img src={RemoveIcon} alt="remove filter" />
-      </button>
+      </RemoveButton>
     </div>
   );
 };

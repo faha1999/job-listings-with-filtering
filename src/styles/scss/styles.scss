@@ -3,6 +3,9 @@
 @import './keyFrames';
 @import './globals';
 
+// themes
+@import './themes/themesToggler';
+
 // components
 @import './components/jobCard';
 @import './components/FilterBox';

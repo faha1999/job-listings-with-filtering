@@ -13,7 +13,6 @@ import { FilterPill } from '../FilterPill/FilterPill';
 
 const FilterBoxWrapper = styled.div`
   background: ${({ theme }) => theme.cardBg};
-  box-shadow: ${({ theme }) => (theme === 'light' ? '$box-shadow' : 'none')};
 `;
 
 const FilterInput = styled.input`
@@ -66,7 +65,7 @@ export const FilterBox = () => {
       text.toLowerCase().includes(value.toLowerCase()),
     );
     setDropdownTexts(updatedDropdownTexts);
-  }, [cleanDropdownTexts, value]);
+  }, [value]);
 
   return (
     <FilterBoxWrapper

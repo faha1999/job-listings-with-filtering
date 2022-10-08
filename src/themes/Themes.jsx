@@ -4,7 +4,7 @@ export const lightTheme = {
   text: '#1c1d1d',
   pillBg: 'hsl(180, 31%, 95%)',
   pillText: 'hsl(180, 29%, 50%)',
-  pillBgDark: 'hsl(180, 29%, 50%)',
+  pillBgDark: 'hsl(180, 49%, 50%)',
   decoBg: 'hsl(180, 29%, 50%)',
 };
 

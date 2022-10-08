@@ -9,6 +9,10 @@ const Wrapper = styled.div`
   background: ${({ theme }) => theme.decoBg};
 `;
 
+const Section = styled.section`
+  background: ${({ theme }) => theme.body};
+`;
+
 export const DecoImage = ({ theme, toggleTheme }) => {
   const [decoImage, setDecoImage] = useState(DecoImageDesktop);
 
@@ -28,11 +32,11 @@ export const DecoImage = ({ theme, toggleTheme }) => {
   }, []);
 
   return (
-    <section className="Section">
+    <Section className="Section">
       <Wrapper>
         <img className="Image" src={decoImage} alt="decorated image" />
         <ThemeToggler theme={theme} toggleTheme={toggleTheme} />
       </Wrapper>
-    </section>
+    </Section>
   );
 };

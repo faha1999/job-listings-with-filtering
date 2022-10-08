@@ -16,6 +16,12 @@
     transform: scale(0.95);
   }
 
+  img {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+  }
+
   @media screen and (max-width: 1000px) {
     top: 0.5em;
     right: 1em;

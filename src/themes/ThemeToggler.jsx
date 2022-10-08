@@ -41,8 +41,8 @@ export const ThemeToggler = ({ theme, toggleTheme }) => {
         title="Theme Toggler"
         onClick={toggleTheme}
       >
-        {theme === 'light' && <Icon>🌜</Icon>}
-        {theme === 'dark' && <SunIcon>🌞</SunIcon>}
+        {theme === 'light' && <Icon>🌖</Icon>}
+        {theme === 'dark' && <SunIcon>🔅</SunIcon>}
       </Button>
     </>
   );
