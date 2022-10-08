@@ -8,6 +8,7 @@ import React, {
 import styled from 'styled-components';
 import { pureDropdownTexts } from '../../helpers/helpers';
 import { Context } from '../../Context';
+import { FilterDropdown } from '../FilterDropdown/FilterDropdown';
 
 const FilterBoxWrapper = styled.div`
   background: ${({ theme }) => theme.cardBg};
