@@ -23,49 +23,49 @@
     font-size: 0.83em;
     margin-bottom: 3.5em;
   }
-}
 
-.FilterPillsWrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.FilterInput {
-  padding: 0.28em 0;
-  border: none;
-  outline: none;
-  font-size: $fs-global;
-  color: $desaturated-dark-cyan;
-  font-weight: $fw-bold;
-}
-
-.ClearButton {
-  margin-left: auto;
-  background: none;
-  border: none;
-  color: $desaturated-dark-cyan;
-  text-decoration: underline;
-  font-weight: $fw-bold;
-  font-size: 0.9em;
-  opacity: 0.5;
-  transition: all 0.2s $timing-cubic;
-
-  &:hover {
-    opacity: 1;
+  .FilterPillsWrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
-}
 
-.Placeholder {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 1.39em;
-  color: $desaturated-dark-cyan;
-  opacity: 0.5;
-  font-size: $fs-global;
-  font-weight: $fw-bold;
+  .Placeholder {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.39em;
+    color: $desaturated-dark-cyan;
+    opacity: 0.5;
+    font-size: $fs-global;
+    font-weight: $fw-bold;
 
-  @media screen and (max-width: 1000px) {
-    left: 0.84em;
+    @media screen and (max-width: 1000px) {
+      left: 0.84em;
+    }
+  }
+
+  .FilterInput {
+    padding: 0.28em 0;
+    border: none;
+    outline: none;
+    font-size: $fs-global;
+    color: $desaturated-dark-cyan;
+    font-weight: $fw-bold;
+  }
+
+  .ClearButton {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: $desaturated-dark-cyan;
+    text-decoration: underline;
+    font-weight: $fw-bold;
+    font-size: 0.9em;
+    opacity: 0.5;
+    transition: all 0.2s $timing-cubic;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }

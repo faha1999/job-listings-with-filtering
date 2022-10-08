@@ -36,6 +36,7 @@ export const JobCard = ({ job }) => {
         />
 
         <div className="CompanyInfoWrapper">
+          <h2 className="CompanyName">{job.company}</h2>
           {job.new && (
             <span className="NewJob Job" onClick={() => addFilter('New')}>
               New!
