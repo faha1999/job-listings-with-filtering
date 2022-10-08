@@ -22,12 +22,12 @@ const Skill = styled.button`
     background: ${({ theme }) => theme.pillBgDark};
   }
 `;
-export const JobCard = () => {
+export const JobCard = ({ job }) => {
   const { filters, addFilter } = useContext(Context);
   const skills = [job.role, job.level, ...job.languages, ...job.tools];
 
   return (
-    <Wrapper className="Wrapper">
+    <Wrapper className="Wrapper" key={job.id} featured={job.featured}>
       <div className="Column">
         <img
           className="CompanyLogo"

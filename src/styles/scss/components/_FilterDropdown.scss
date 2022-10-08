@@ -8,7 +8,7 @@
   left: 0;
   top: 8em;
   z-index: 2;
-  animation: $fadeUp 0.2s var(--timing-cubic) forwards;
+  animation: fadeUp 0.2s $timing-cubic forwards;
 
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
@@ -21,9 +21,9 @@
 
 .DropdownItem {
   font-size: 0.83em;
-  color: var(--desaturated-dark-cyan);
+  color: $desaturated-dark-cyan;
   padding: 0.56em 1.11em;
-  font-weight: var(--fw-normal);
+  font-weight: $fw-normal;
   user-select: none;
   cursor: pointer;
   transition: padding 0.2s ease-out;
@@ -38,7 +38,7 @@
 
   &:hover {
     padding-left: 1.56em;
-    border-color: var(--desaturated-dark-cyan);
+    border-color: $desaturated-dark-cyan;
   }
 }
 

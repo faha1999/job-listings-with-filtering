@@ -38,7 +38,7 @@ export const FilterBox = () => {
         }
       }
     },
-    [setFilters, value],
+    [setFilters, dropdownTexts, value],
   );
 
   useEffect(() => {
@@ -66,7 +66,7 @@ export const FilterBox = () => {
       text.toLowerCase().includes(value.toLowerCase()),
     );
     setDropdownTexts(updatedDropdownTexts);
-  }, [value]);
+  }, [cleanDropdownTexts, value]);
 
   return (
     <FilterBoxWrapper

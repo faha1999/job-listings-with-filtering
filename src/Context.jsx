@@ -1,11 +1,11 @@
 import React, { createContext, useEffect, useState } from 'react';
-import data from './data.json';
+import jobsData from './data/jobsData';
 
 export const Context = createContext();
 
 export const ContextProvider = ({ children }) => {
   const [allJobs, setAllJobs] = useState(
-    data.map((job) => ({ ...job, show: true })),
+    jobsData.map((job) => ({ ...job, show: true })),
   );
   const [filters, setFilters] = useState([]);
 

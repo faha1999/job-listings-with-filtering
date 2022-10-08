@@ -9,7 +9,7 @@ const FilterDropdownWrapper = styled.div`
     theme === 'light' ? 'var(--box-shadow)' : 'none'};
 `;
 
-export const FilterDropdown = () => {
+export const FilterDropdown = ({ setValue, dropdownTexts }) => {
   const { addFilter } = useContext(Context);
   return (
     <FilterDropdownWrapper>

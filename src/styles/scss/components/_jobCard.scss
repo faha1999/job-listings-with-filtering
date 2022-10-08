@@ -3,7 +3,7 @@
   border-radius: 0.5em;
   @include FlexCenter;
   margin-bottom: 1.67em;
-  animation: $fadeUp 0.2s $timing-cubic forwards;
+  animation: fadeUp 0.2s $timing-cubic forwards;
 
   &:last-of-type {
     margin-bottom: 0;

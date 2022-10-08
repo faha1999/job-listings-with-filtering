@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import ThemeToggler from '../../themes/ThemeToggler';
+import { ThemeToggler } from '../../themes/ThemeToggler';
 import DecoImageDesktop from '../../assets/images/bg-header-desktop.svg';
 import DecoImageMobile from '../../assets/images/bg-header-mobile.svg';
 
