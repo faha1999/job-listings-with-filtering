@@ -82,15 +82,18 @@ export const FilterBox = () => {
         <p className="Placeholder">Search your dream job...</p>
       )}
 
-      <FilterInput
-        className="FilterInput"
-        type="text"
-        autoComplete="off"
-        size={value.length ? value.length : 1}
-        value={value}
-        onChange={(e) => setValue(e.target.value)}
-        ref={inputRef}
-      />
+      <label for="search">
+        <FilterInput
+          className="FilterInput"
+          type="text"
+          autoComplete="off"
+          size={value.length ? value.length : 1}
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          ref={inputRef}
+          id="search"
+        />
+      </label>
 
       {value.length > 0 && (
         <FilterDropdown
