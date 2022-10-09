@@ -34,7 +34,7 @@ export const DecoImage = ({ theme, toggleTheme }) => {
   return (
     <Section className="Section">
       <Wrapper>
-        <img className="Image" src={decoImage} alt="decorated image" />
+        <img className="Image" src={decoImage} alt="decorated" />
         <ThemeToggler theme={theme} toggleTheme={toggleTheme} />
       </Wrapper>
     </Section>
