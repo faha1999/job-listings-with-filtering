@@ -10,7 +10,7 @@ const Wrapper = styled.div`
     featured ? '0.35em solid var(--desaturated-dark-cyan)' : null};
 `;
 
-const JobTitle = styled.h3`
+const JobTitle = styled.h2`
   color: ${({ theme }) => theme.text};
 `;
 
