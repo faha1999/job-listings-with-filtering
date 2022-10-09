@@ -82,7 +82,7 @@ export const FilterBox = () => {
         <p className="Placeholder">Search your dream job...</p>
       )}
 
-      <label for="search">
+      <label>
         <FilterInput
           className="FilterInput"
           type="text"
@@ -91,7 +91,6 @@ export const FilterBox = () => {
           value={value}
           onChange={(e) => setValue(e.target.value)}
           ref={inputRef}
-          id="search"
         />
       </label>
 
